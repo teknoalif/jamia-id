@@ -1,58 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+}
 
 :root {
-    --foreground-rgb: 15, 23, 42; /* Slate 900 */
-    --background-start-rgb: 248, 250, 252; /* Slate 50 */
-    --background-end-rgb: 255, 255, 255; /* White */
+    --background: #f8fafc; /* Slate 50 */
+    --foreground: #0f172a; /* Slate 900 */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --foreground-rgb: 248, 250, 252;
-        --background-start-rgb: 2, 6, 23;
-        --background-end-rgb: 15, 23, 42;
+        --background: #020617;
+        --foreground: #f8fafc;
     }
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: var(--foreground);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 }
 
-/* Custom Jamia Classes */
-@layer components {
-    .btn-primary {
-        @apply bg-slate-900 text-white px-8 py-4 rounded-full font-semibold
-        hover:bg-slate-800 hover:shadow-lg transform hover:-translate-y-1
-        transition-all duration-200;
-    }
-
-    .card-glass {
-        @apply bg-white/80 backdrop-blur-md border border-slate-200
-        rounded-3xl p-8 shadow-sm hover:shadow-xl
-        transition-all duration-300;
-    }
+/* Custom Jamia Classes menggunakan gaya v4 */
+@utility btn-primary {
+    @apply bg-slate-900 text-white px-8 py-4 rounded-full font-semibold
+    hover:bg-slate-800 hover:shadow-lg transform hover:-translate-y-1
+    transition-all duration-200;
 }
 
-/* Scrollbar Styling (Kubuntu/Chrome Style) */
+@utility card-glass {
+    @apply bg-white/80 backdrop-blur-md border border-slate-200
+    rounded-3xl p-8 shadow-sm hover:shadow-xl
+    transition-all duration-300;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    @apply bg-slate-100;
+    background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+    background: #cbd5e1;
+    border-radius: 9999px;
 }
