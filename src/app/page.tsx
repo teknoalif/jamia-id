@@ -20,7 +20,7 @@ export default function HomePage() {
       action: "Kunjungi Teknologi"
     },
     {
-      domain: "rumaatun.jamia.id",
+      domain: "rumatun.jamia.id",
       title: "Pendidikan & Rumaatun",
       description: "Ekosistem pembelajaran terpadu untuk matematika, literasi, dan pengembangan keilmuan.",
       badge: "Edukasi & Pembelajaran",
