@@ -120,7 +120,7 @@ export default function HomePage() {
                 <p className="text-purple-400 mt-2">const <span className="text-blue-400">jamiaEcosystem</span> = &#123;</p>
                 <div className="pl-4 space-y-1 mt-1 text-slate-300">
                   <p>pilar1: <span className="text-amber-300">'teknologi.jamia.id'</span>,</p>
-                  <p>pilar2: <span className="text-amber-300">'rumaatun.jamia.id'</span>,</p>
+                  <p>pilar2: <span className="text-amber-300">'rumatun.jamia.id'</span>,</p>
                   <p>pilar3: <span className="text-amber-300">'wedding.jamia.id'</span>,</p>
                   <p>developer: <span className="text-amber-300">'kakalif.my.id'</span></p>
                 </div>
