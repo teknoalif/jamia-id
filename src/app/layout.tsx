@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
     title: 'JAMIA - Menyeluruh & Terintegrasi',
     description: 'Solusi Digital Terintegrasi untuk Masa Depan Bisnis & Pendidikan.',
-    // Tambahkan baris icons di bawah ini
+    // Konfigurasi icons mengarah ke public/logo.png
     icons: {
-        icon: '/logo.png', // Mengarah ke public/logo.png
+        icon: '/logo.png',
         shortcut: '/logo.png',
         apple: '/logo.png',
     },
